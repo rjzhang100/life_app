@@ -2,22 +2,19 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import './navbar.css';
+import '../styles/navbar.css';
 
 function NavBar() {
-    const navlinkStyle = {
-        color : 'white',
-    };
 
   return (
-    <Navbar bg="dark" expand="lg">
+    <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home" style={navlinkStyle}>Welcome</Navbar.Brand>
+        <Navbar.Brand href="#home">Welcome</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" style={navlinkStyle}>Dashboard</Nav.Link>
-            <Nav.Link href="#link" style={navlinkStyle}>Manage Financials</Nav.Link>
+            <Nav.Link href="#home">Dashboard</Nav.Link>
+            <Nav.Link href="#link">Manage Financials</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
